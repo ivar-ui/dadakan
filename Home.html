@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Fashion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.theme.min.css" rel="stylesheet">
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#000000" data-border-radius='small'></script>
+</head>
+<body class="bg-gray-50">
+    <header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo">
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#" class="border-custom text-custom inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Pria
+                    </a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Wanita
+                    </a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Anak
+                    </a>
+                    <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                        Sale
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+        <section class="mb-16">  <!-- margin bawah jarak antar section -->
+            <h2 class="text-2xl font-bold text-center mb-8">Banner Promosi</h2> <!-- Judul section -->
+            <div class="glide mt-8">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="img/banner1.jpg" alt="Banner 1" class="w-full h-[500px] object-cover">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="img/banner2.jpg" alt="Banner 2" class="w-full h-[500px] object-cover">
+                        </li>
+                    </ul>
+                </div>
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="mb-16">  <!-- margin bawah jarak antar section -->
+            <h2 class="text-2xl font-bold text-center mb-8">Kategori Produk</h2> <!-- Judul section -->
+            <div class="grid grid-cols-4 gap-6 mt-12">
+                <a href="#" class="group">
+                    <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                        <img src="img/konten1.jpg" alt="Pakaian" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700 text-center">Pakaian</h3>
+                </a>
+                <a href="#" class="group">
+                    <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                        <img src="img/konten2.jpg" alt="Sepatu" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700 text-center">Sepatu</h3>
+                </a>
+                <a href="#" class="group">
+                    <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                        <img src="img/konten3.jpg" alt="Tas" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700 text-center">Tas</h3>
+                </a>
+                <a href="#" class="group">
+                    <div class="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                        <img src="img/konten4.jpg" alt="Aksesoris" class="w-full h-full object-center object-cover group-hover:opacity-75">
+                    </div>
+                    <h3 class="mt-4 text-sm text-gray-700 text-center">Aksesoris</h3>
+                </a>
+            </div>
+        </section>
+
+        <section class="mb-16">  <!-- jarak lebih lebar di sini -->
+            <h2 class="text-2xl font-bold text-center mb-8">Produk Populer</h2> <!-- Judul section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Korean drama scene with emotional tension, modern setting, high production value, cinematic lighting&width=300&height=300&orientation=squarish&flag=6c15ed17-6c35-4400-8920-6a6105223184" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm text-gray-500 mb-2">MOVIES</span>
+                    <h4 class="text-sm font-medium">DRAMA KOREA 'THE TRUNK': UNGKAP RAHASIA KAWIN KONTRAK</h4>
+                </article>
+
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Horror movie scene with religious symbols, dark atmosphere, eerie lighting&width=300&height=300&orientation=squarish&flag=df074aa2-454c-4fd9-b5a5-5d6da99e5c3d" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm text-gray-500 mb-2">MOVIES</span>
+                    <h4 class="text-sm font-medium">REVIEW 'HERETIC': HOROR RELIGI YANG MENDEBAT AGAMA</h4>
+                </article>
+
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Indonesian horror movie scene with supernatural elements, traditional setting&width=300&height=300&orientation=squarish&flag=33bd10ab-e58a-44bf-941b-f936602f30fc" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm text-gray-500 mb-2">MOVIES</span>
+                    <h4 class="text-sm font-medium">FILM 'HUTANG NYAWA' ANGKAT CERITA SEPERTI KALUNA, TAPI VERSI HOROR</h4>
+                </article>
+
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Polynesian cultural scene, vibrant colors, traditional elements&width=300&height=300&orientation=squarish&flag=35e33459-7d23-463f-bb47-78cb000240f9" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm text-gray-500 mb-2">MOVIES</span>
+                    <h4 class="text-sm font-medium">REVIEW MOANA 2: AKURASI BUDAYA POLINESIA YANG MEMUKAU</h4>
+                </article>
+
+                <article class="flex flex-col items-center text-center">
+                    <div class="w-32 h-32 rounded-full overflow-hidden mb-4">
+                        <img src="https://creatie.ai/ai/api/search-image?query=Electronic music concert scene, neon lights, energetic atmosphere&width=300&height=300&orientation=squarish&flag=26cf751c-5524-454b-a003-393b1bc54d89" alt="" class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-sm text-gray-500 mb-2">MUSIC</span>
+                    <h4 class="text-sm font-medium">TERAPI LEWAT MUSIK DENGAN BPM TINGGI BERSAMA PRONTAXAN</h4>
+                </article>
+            </div>
+        </section>
+
+
+        <section class="mb-12">
+            <div class="bg-white rounded-lg overflow-hidden shadow">
+                <div class="aspect-w-16 aspect-h-9">
+                    <video src="video/bumper1.mp4" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen autoplay loop muted></video>
+                </div>
+            </div>
+        </section>
+        <div class="mt-12 grid grid-cols-12 gap-6">
+            <aside class="col-span-3">
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <h3 class="text-lg font-bold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-facebook fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-twitter fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="flex items-center justify-between mb-6">
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">VIDEO TERBARU</h3>
+                    <div class="space-y-4">            <a href="#" class="block group">
+                            <div class="relative">
+                                <img src="https://creatie.ai/ai/api/search-image?query=batik fractal pattern with mathematical formulas overlay, modern design studio setting&width=320&height=180&orientation=landscape&flag=287786d2-382f-4404-9924-3eb7b5fdfd11" alt="Batik Fractal" class="w-full h-[180px] object-cover rounded">                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-20 transition">                        <i class="fas fa-play text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <h4 class="mt-2 text-sm font-semibold line-clamp-2 group-hover:text-custom">Batik Fractal: Inovasi Tanpa Meninggalkan Tradisi | Froyonion Meets</h4>
+                            <p class="text-xs text-gray-500 mt-1">4 NOVEMBER</p>            </a>
+            
+                        <a href="#" class="block group">
+                            <div class="relative">
+                                <img src="https://creatie.ai/ai/api/search-image?query=traditional indonesian street food market scene with modern twist&width=320&height=180&orientation=landscape&flag=249e2418-1da3-454f-accb-9973bf4f02fb" alt="Kuliner Glodok" class="w-full h-[180px] object-cover rounded">                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-20 transition">                        <i class="fas fa-play text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <h4 class="mt-2 text-sm font-semibold line-clamp-2 group-hover:text-custom">KENYANG SAMPE GBLK DI GLODOK | KULINERIKU X GLODOK</h4>
+                            <p class="text-xs text-gray-500 mt-1">27 OCTOBER</p>
+                        </a>            <a href="#" class="block group">
+                            <div class="relative">
+                                <img src="https://creatie.ai/ai/api/search-image?query=penang street food scene with historical architecture background&width=320&height=180&orientation=landscape&flag=3e4bbd69-b900-40ce-ac4c-e89c7bb311c9" alt="Tanjung Pinang" class="w-full h-[180px] object-cover rounded">                    <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-30 group-hover:bg-opacity-20 transition">                        <i class="fas fa-play text-white text-2xl"></i>
+                                </div>
+                            </div>
+                            <h4 class="mt-2 text-sm font-semibold line-clamp-2 group-hover:text-custom">KENYANG DI TANJUNG PINANG | KULINERIKU X TANJUNG PINANG EP.1</h4>
+                            <p class="text-xs text-gray-500 mt-1">27 SEPTEMBER</p>            </a>
+            
+                        <button class="w-full py-3 px-4 bg-gray-900 text-white rounded !rounded-button flex items-center justify-center group hover:bg-gray-800 transition">                <span>LIHAT EPISODE LAIN</span>
+                            <i class="fas fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
+                        </button>
+                    </div>
+                </div>
+            </aside>
+            
+
+            <div class="col-span-9">
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="bg-white rounded-lg shadow">
+                        <div class="aspect-w-1 aspect-h-1 rounded-t-lg overflow-hidden">
+                            <img src="https://creatie.ai/ai/api/search-image?query=A stylish white cotton t-shirt displayed on a minimalist mannequin against a clean white background, showcasing the perfect fit and quality fabric texture&width=300&height=300&orientation=squarish&flag=880ea464-3f2c-4f00-8a6d-15771cd4d06a" alt="T-Shirt" class="w-full h-full object-center object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-medium text-gray-900">T-Shirt Putih Klasik</h3>
+                            <p class="mt-1 text-sm text-gray-500">Rp199.000</p>
+                            <div class="mt-2 flex items-center">
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-500">(25)</span>
+                            </div>
+                            <button class="!rounded-button mt-4 w-full bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow">
+                        <div class="aspect-w-1 aspect-h-1 rounded-t-lg overflow-hidden">
+                            <img src="https://creatie.ai/ai/api/search-image?query=A pair of premium denim jeans laid flat on a white surface, highlighting the quality stitching and wash details with professional studio lighting&width=300&height=300&orientation=squarish&flag=ffc66602-ba37-4577-bdbd-5c61292611f0" alt="Jeans" class="w-full h-full object-center object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-medium text-gray-900">Celana Jeans Slim Fit</h3>
+                            <p class="mt-1 text-sm text-gray-500">Rp399.000</p>
+                            <div class="mt-2 flex items-center">
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="far fa-star text-yellow-400"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-500">(18)</span>
+                            </div>
+                            <button class="!rounded-button mt-4 w-full bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow">
+                        <div class="aspect-w-1 aspect-h-1 rounded-t-lg overflow-hidden">
+                            <img src="https://creatie.ai/ai/api/search-image?query=A elegant dress displayed on a mannequin against a white background, showing the flowing fabric and detailed design elements with perfect studio lighting&width=300&height=300&orientation=squarish&flag=be6e69cc-2fcf-409f-8671-d706620a6daa" alt="Dress" class="w-full h-full object-center object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-sm font-medium text-gray-900">Dress Casual Elegant</h3>
+                            <p class="mt-1 text-sm text-gray-500">Rp599.000</p>
+                            <div class="mt-2 flex items-center">
+                                <div class="flex items-center">
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star text-yellow-400"></i>
+                                    <i class="fas fa-star-half-alt text-yellow-400"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-500">(32)</span>
+                            </div>
+                            <button class="!rounded-button mt-4 w-full bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">
+                                Tambah ke Keranjang
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-span-12 lg:col-span-8">
+                        <article class="bg-white rounded-lg overflow-hidden shadow-sm mb-8">                    <div class="flex flex-col md:flex-row">
+                                <div class="md:w-2/5">
+                                    <img src="img/artikel1.jpg" alt="The Cottons" class="w-full h-full object-cover">                        </div>
+                                <div class="md:w-3/5 p-6">
+                                    <div class="text-custom uppercase tracking-wide text-sm font-semibold">MUSIK</div>
+                                    <h2 class="mt-2 text-2xl font-bold text-gray-900">THE COTTONS NIKMATI ENERGI PENONTON JOYLAND FESTIVAL DI HARI KETIGA</h2>                            <p class="mt-3 text-gray-600">The Cottons, unit musik yang baru berumur satu tahunan lebih, semenjak panggung pertamanya, baru menyelesaikan festival musik besar ketiganya, yaitu Joyland Festival Jakarta 2024.</p>                            <div class="mt-4 flex items-center">
+                                        <img class="h-8 w-8 rounded-full" src="https://creatie.ai/ai/api/search-image?query=professional headshot of a young asian journalist&width=100&height=100&orientation=squarish&flag=73dd181b-ef98-4582-b2e9-80616aa2acfb" alt="Maha">                                <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900">Maha</p>
+                                            <p class="text-sm text-gray-500">28 November 2024</p>
+                                        </div>                            </div>
+                                </div>
+                            </div>
+                        </article>
+        
+                        <article class="bg-white rounded-lg overflow-hidden shadow-sm mb-8">                    <div class="flex flex-col md:flex-row">
+                                <div class="md:w-2/5">
+                                    <img src="img/artikel2.jpg" alt="Hutang Nyawa" class="w-full h-full object-cover">                        </div>
+                                <div class="md:w-3/5 p-6">
+                                    <div class="text-custom uppercase tracking-wide text-sm font-semibold">FILM</div>
+                                    <h2 class="mt-2 text-2xl font-bold text-gray-900">FILM 'HUTANG NYAWA' ANGKAT CERITA SEPERTI KALUNA, TAPI VERSI HOROR</h2>                            <p class="mt-3 text-gray-600">'Hutang Nyawa' bercerita tentang tumbal proyek atau pabrik. Film horor ini tak hanya mengangkat cerita seram, tapi juga tentang orang-orang yang menjadi korban dari kejadian tersebut.</p>                            <div class="mt-4 flex items-center">
+                                        <img class="h-8 w-8 rounded-full" src="https://creatie.ai/ai/api/search-image?query=professional headshot of a male film critic&width=100&height=100&orientation=squarish&flag=24b6cc04-14e7-4c04-b872-4fcb620759ba" alt="Fadhil">                                <div class="ml-3">
+                                            <p class="text-sm font-medium text-gray-900">Fadhil</p>
+                                            <p class="text-sm text-gray-500">27 November 2024</p>
+                                        </div>                            </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </main>
+    <main class="pt-16"></main>
+
+       
+    </main>
+
+    <footer class="bg-white mt-12">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Tentang Kami</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                Profil Perusahaan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                Karir
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Bantuan</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                FAQ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                Pengiriman
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-900">
+                                Pengembalian
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Kontak</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li class="flex">
+                            <i class="fas fa-envelope w-6 text-gray-400"></i>
+                            <span class="text-base text-gray-500">cs@fashionstore.id</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-phone w-6 text-gray-400"></i>
+                            <span class="text-base text-gray-500">021-1234567</span>
+                        </li>
+                        <li class="flex">
+                            <i class="fas fa-map-marker-alt w-6 text-gray-400"></i>
+                            <span class="text-base text-gray-500">Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-400 tracking-wider uppercase">Berlangganan</h3>
+                    <p class="mt-4 text-base text-gray-500">Dapatkan info terbaru dan penawaran eksklusif.</p>
+                    <form class="mt-4">
+                        <div class="flex">
+                            <input type="email" class="min-w-0 flex-1 bg-white border border-gray-300 rounded-l px-4 py-2 text-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-custom focus:border-custom" placeholder="Alamat email">
+                            <button type="submit" class="!rounded-button -ml-px relative inline-flex items-center space-x-2 px-4 py-2 border border-transparent text-sm font-medium text-white bg-custom hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-custom">
+                                Daftar
+                            </button>
+                        </div>
+                    </form>
+                    <div class="mt-6 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-gray-500">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-200 pt-8">
+                <p class="text-base text-gray-400 text-center">&copy; 2024 Fashion Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            autoplay: 5000,
+            hoverpause: true,
+            perView: 1,
+            animationDuration: 800
+        }).mount();
+    </script>
+</body>
+</html>
